@@ -1,1 +1,67 @@
-# zyt225-
+<!DOCTYPE html>
+<!--
+  作者：朱禹同
+  前缀：zyt_225
+  创建时间：2026-11-04
+  使用模型：DeepSeek-V4.1-Flash
+  功能说明：新闻选项卡模块，一比一还原「最新投诉 / 官方回应 / 追踪调查」三组新闻列表
+-->
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻焦点 - 朱禹同</title>
+  <link rel="stylesheet" href="css/zyt_225_style.css">
+</head>
+<body>
+  <!-- 朱禹同 zyt_225：新闻选项卡模块 -->
+  <div class="zyt_225_news" id="zyt_225_news">
+    <!-- 朱禹同 zyt_225：选项卡标题栏 -->
+    <div class="zyt_225_tabbar" id="zyt_225_tabs" role="tablist">
+      <button type="button" class="zyt_225_tab zyt_225_tab--active" data-zyt_225_index="0" role="tab" aria-selected="true">最新投诉</button>
+      <button type="button" class="zyt_225_tab" data-zyt_225_index="1" role="tab" aria-selected="false">官方回应</button>
+      <button type="button" class="zyt_225_tab" data-zyt_225_index="2" role="tab" aria-selected="false">追踪调查</button>
+    </div>
+
+    <!-- 朱禹同 zyt_225：面板一 最新投诉 -->
+    <ul class="zyt_225_panel zyt_225_panel--active" data-zyt_225_panel="0" role="tabpanel">
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">北京火车站出租车乱象调查 司机称计价器坏</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">公园仙人掌遭刻字“毁容” 一棵仙人掌被刻</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">昆明屡现游客“辣手摧鸥” 网友谴责 (组图)</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">四川一星级公厕开建1年未开放变“茶楼”</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">北京北海地坛公园暗藏高端会所 园方称“曝</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">北京北海金丝楠木柱遭英文字母“签名”破坏</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">北京动物园门票玩猫腻 低价门票遭“雪藏”</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">女子不满“无购物”投诉旅行社 称东西一样没</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">老年人参团游权益易受损 旅行社被曝对老人</a></li>
+    </ul>
+
+    <!-- 朱禹同 zyt_225：面板二 官方回应 -->
+    <ul class="zyt_225_panel" data-zyt_225_panel="1" role="tabpanel">
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">大绿鸭、翘尾鸭凑热闹 法官解读“山寨鸭”是</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">国家旅游局回应涨价：“团队游价格系正常</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">国家旅游局回应“新旅游法实施后旅行社团</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">出游遇纠纷可依《旅游法》维权 明确旅游投</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">解读新旅游法三“谣传” 扫货族可安心</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">《旅游法》将抑制“零负团费”和“门票经</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">文明旅游将入旅游合同 行为指南和公约将作</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">天津二季度旅行社服务质量发布 投诉涉及8</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">敦煌：国家法定节假日所有景点景区免收停</a></li>
+    </ul>
+
+    <!-- 朱禹同 zyt_225：面板三 追踪调查 -->
+    <ul class="zyt_225_panel" data-zyt_225_panel="2" role="tabpanel">
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">《旅游法》实施半月 自费景区遭正规一日游</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">追踪香格里拉旅游“怪象”：涉事导游等已</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">导游挣钱新“攻略”：逃离旅行社自己</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">九寨沟为何变成“死胡同”？——数千游客</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">九寨沟为何仍现游客滞留？</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">旅游之尴尬：“膀爷”游博物馆、女士超性感进</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">记者暗访兵马俑景区：玉器店买玉 过期门票</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">假冒香港游客借卡转账 两女子忽悠女大学生</a></li>
+      <li class="zyt_225_item"><a class="zyt_225_link" href="#">39家旅游单位违法被罚1800万 购物店结盟统</a></li>
+    </ul>
+  </div>
+
+  <script src="js/zyt_225_tab.js"></script>
+</body>
+</html>
