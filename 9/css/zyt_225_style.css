@@ -1,0 +1,112 @@
+﻿/* 朱禹同 zyt_225：页面基础样式重置 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+body {
+  font-family: "SimSun", "宋体", serif;
+}
+
+/* 朱禹同 zyt_225：新闻模块外层容器，宽度留足行尾余量，避免末字被裁成半截 */
+.zyt_225_news {
+  width: 258px;
+  margin: 6px 0 0 8px;
+  background: #ffffff;
+}
+
+/* 朱禹同 zyt_225：选项卡标题栏，底部铺 2px 蓝色下划线 */
+.zyt_225_tabbar {
+  position: relative;
+  display: flex;
+  gap: 1px;
+}
+
+.zyt_225_tabbar::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #7b90eb;
+}
+
+/* 朱禹同 zyt_225：选项卡按钮，默认无边框、黑色加粗 */
+.zyt_225_tab {
+  position: relative;
+  z-index: 1;
+  height: 26px;
+  padding: 0 9px 2px;
+  border: 2px solid transparent;
+  border-bottom: 0;
+  background: transparent;
+  color: #000000;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 17px;
+  white-space: nowrap;
+  cursor: pointer;
+  /* 朱禹同 zyt_225：细描边加深笔画，贴近截图中的纯黑观感 */
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+/* 朱禹同 zyt_225：选中状态的选项卡，红色边框 + 红色文字 */
+.zyt_225_tab--active {
+  border-color: #a80000;
+  background: #ffffff;
+  color: #a80000;
+}
+
+/* 朱禹同 zyt_225：新闻列表面板，默认隐藏 */
+.zyt_225_panel {
+  display: none;
+  margin: 0;
+  padding: 10px 0 19px 4px;
+  list-style: none;
+}
+
+/* 朱禹同 zyt_225：当前显示的面板 */
+.zyt_225_panel--active {
+  display: block;
+}
+
+/* 朱禹同 zyt_225：单条新闻，固定行高并裁掉超出部分 */
+.zyt_225_item {
+  height: 24px;
+  overflow: hidden;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: -0.4px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+/* 朱禹同 zyt_225：黑色小方块项目符号 */
+.zyt_225_item::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin-right: 5px;
+  background: #000000;
+  vertical-align: middle;
+}
+
+/* 朱禹同 zyt_225：新闻标题链接 */
+.zyt_225_link {
+  color: #000000;
+  text-decoration: none;
+  /* 朱禹同 zyt_225：细描边加深笔画，贴近截图中的纯黑观感 */
+  -webkit-text-stroke: 0.5px currentColor;
+}
+
+/* 朱禹同 zyt_225：鼠标悬停时标题变红并出现下划线 */
+.zyt_225_link:hover {
+  color: #a80000;
+  text-decoration: underline;
+}
+
